@@ -1,1 +1,84 @@
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Arial, sans-serif;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(4, 100px);
+gap: 10px;
+margin: 20px;
+}
+.card {
+width: 100px;
+height: 100px;
+background-color: #2e3d49;
+cursor: pointer;
+border-radius: 8px;
+transform-style: preserve-3d;
+transition: transform 0.5s;
+}
+.card.flip {
+transform: perspective(600px) rotateY(180deg);
+}
+.card .front,
+.card .back {
 
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 8px;
+}
+4. script.js
+const cardArray = [
+{ name: 'A', img: 'A' },
+{ name: 'A', img: 'A' },
+{ name: 'B', img: 'B' },
+{ name: 'B', img: 'B' }
+];
+const grid = document.getElementById('grid');
+let cardsChosen = [], cardsChosenId = [], cardsWon = [];
+cardArray.sort(() => 0.5 - Math.random());
+function createBoard() {
+cardArray.forEach((card, index) => {
+const cardElement = document.createElement('div');
+cardElement.classList.add('card');
+cardElement.setAttribute('data-id', index);
+cardElement.addEventListener('click', flipCard);
+const front = document.createElement('div');
+front.classList.add('front');
+const back = document.createElement('div');
+back.classList.add('back');
+cardElement.appendChild(front);
+cardElement.appendChild(back);
+grid.appendChild(cardElement);
+});
+}
+function flipCard() {
+const id = this.getAttribute('data-id');
+cardsChosen.push(cardArray[id].name);
+cardsChosenId.push(id);
+this.classList.add('flip');
+this.querySelector('.front').textContent = cardArray[id].img;
+if (cardsChosen.length === 2) setTimeout(checkForMatch, 500);
+}
+function checkForMatch() {
+const cards = document.querySelectorAll('.card');
+const [firstId, secondId] = cardsChosenId;
+if (cardsChosen[0] === cardsChosen[1]) {
+cards[firstId].removeEventListener('click', flipCard);
+cards[secondId].removeEventListener('click', flipCard);
+cardsWon.push(cardsChosen);
+} else {
+cards[firstId].classList.remove('flip');
+cards[secondId].classList.remove('flip');
+cards[firstId].querySelector('.front').textContent = '';
+cards[secondId].querySelector('.front').textContent = '';
+}
+cardsChosen = []; cardsChosenId = [];
+if (cardsWon.length === cardArray.length/2) alert('Parabéns! Todos os pares encontrados!');
+
+}
+createBoard();
