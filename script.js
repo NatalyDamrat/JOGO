@@ -1,20 +1,20 @@
 const cardArray = [
-    { name: 'A', img: 'imagens/A.jpeg' },
-    { name: 'A', img: 'imagens/A.jpeg' },
-    { name: 'B', img: 'imagens/B.jpeg' },
-    { name: 'B', img: 'imagens/B.jpeg' },
-    { name: 'C', img: 'imagens/C.jpeg' },
-    { name: 'C', img: 'imagens/C.jpeg' },
-    { name: 'D', img: 'imagens/D.jpeg' },
-    { name: 'D', img: 'imagens/D.jpeg' },
-    { name: 'E', img: 'imagens/E.jpeg' },
-    { name: 'E', img: 'imagens/E.jpeg' },
-    { name: 'F', img: 'imagens/F.jpeg' },
-    { name: 'F', img: 'imagens/F.jpeg' },
-    { name: 'G', img: 'imagens/G.jpeg' },
-    { name: 'G', img: 'imagens/G.jpeg' },
-    { name: 'H', img: 'imagens/H.jpeg' },
-    { name: 'H', img: 'imagens/H.jpeg' }
+    { name: 'A', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamF29AyFag5c0p97Yy1x6oPZ3OmvIRvOaew&s' },
+    { name: 'A', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamF29AyFag5c0p97Yy1x6oPZ3OmvIRvOaew&s' },
+    { name: 'B', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7aAY1Z6XGymdYZXF2Li3jE3881KMtVphZA&s' },
+    { name: 'B', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7aAY1Z6XGymdYZXF2Li3jE3881KMtVphZA&s' },
+    { name: 'C', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7IZrGvTnCtareXuy2CPNRmwIFVwnluk-VQ&s' },
+    { name: 'C', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7IZrGvTnCtareXuy2CPNRmwIFVwnluk-VQ&s' },
+    { name: 'D', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMJdPZqiy0MrFeBgbzwV8GLX1udBOxl-dCw&s' },
+    { name: 'D', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMJdPZqiy0MrFeBgbzwV8GLX1udBOxl-dCw&s' },
+    { name: 'E', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU5Ltnx1spwLi_L-hiZ-s4w7qay5yHw_WAQ&s' },
+    { name: 'E', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU5Ltnx1spwLi_L-hiZ-s4w7qay5yHw_WAQ&s' },
+    { name: 'F', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXEyIQcaOmrO7k2XcOy-VJwokz_RKmYZuNA&s' },
+    { name: 'F', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXEyIQcaOmrO7k2XcOy-VJwokz_RKmYZuNA&s' },
+    { name: 'G', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVU1U_i7WPmCG20R2vwB1EC0uuCzSnRWZFQ&s' },
+    { name: 'G', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVU1U_i7WPmCG20R2vwB1EC0uuCzSnRWZFQ&s' },
+    { name: 'H', img: 'https://cdn0.peritoanimal.com.br/pt/posts/3/2/2/animais_engracados_fotos_memes_e_curiosidades_23223_paso_4_600.jpg' },
+    { name: 'H', img: 'https://cdn0.peritoanimal.com.br/pt/posts/3/2/2/animais_engracados_fotos_memes_e_curiosidades_23223_paso_4_600.jpg' }
 ];
 
 // Embaralha o array de cartas
